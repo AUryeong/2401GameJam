@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class DataManager : Singleton<DataManager>
 {
@@ -12,9 +13,19 @@ public class DataManager : Singleton<DataManager>
     private const long SHEET_ID = 0;
     
     public string playerName = "서경훈";
-
     public List<Dialog> dialogs = new();
 
+    public void ReLoadData()
+    {
+        StartCoroutine(ReloadDataCoroutine());
+    }
+
+    private IEnumerator ReloadDataCoroutine()
+    {
+        yield return LoadDataCoroutine();
+        SceneManager.LoadScene("InGame");
+    }
+    
     public void LoadData()
     {
         StartCoroutine(LoadDataCoroutine());
