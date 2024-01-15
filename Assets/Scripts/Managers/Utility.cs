@@ -23,6 +23,11 @@ public static class Utility
         return UnityEngine.Random.value < 0.5f ? 1 : -1;
     }
 
+    public static bool IsEmptyOrWhiteSpace(this string str)
+    {
+        return string.IsNullOrEmpty(str) || string.IsNullOrWhiteSpace(str);
+    }
+
     public static Color GetChangeAlpha(this Color color, float fadeValue)
     {
         return new Color(color.r, color.g, color.b, fadeValue);

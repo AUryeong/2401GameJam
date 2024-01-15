@@ -32,7 +32,7 @@ namespace UI
         [SerializeField] private List<WaitBehaviour> waitBehaviours;
         private Dictionary<string, WaitBehaviour> waitBehaviourDict = new();
 
-        private const float FADE_ALPHA_DURATION = 0.5f;
+        private const float FADE_ALPHA_DURATION = 1f;
 
         protected override void OnCreated()
         {

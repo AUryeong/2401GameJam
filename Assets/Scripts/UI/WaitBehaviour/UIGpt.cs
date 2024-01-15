@@ -18,6 +18,8 @@ namespace UI
             
             questionText.text = string.Format(QUESTION_TEXT, DataManager.Instance.playerName);
             gptText.text = string.Empty;
+
+            yield return new WaitForSeconds(1);
             
             var waitForTyping = new WaitForSeconds(0.035f);
             string str = string.Format(GPT_TEXT, DataManager.Instance.playerName);

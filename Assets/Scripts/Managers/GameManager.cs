@@ -31,7 +31,6 @@ public class GameManager : Singleton<GameManager>
         foreach (var dialog in DataManager.Instance.dialogs)
         {
             uiDialog.SetDialog(dialog);
-            uiDialog.Active();
             yield return uiDialog.Wait();
         }
     }

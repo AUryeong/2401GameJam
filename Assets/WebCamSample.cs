@@ -9,8 +9,11 @@ public class WebCamSample : MonoBehaviour
     {
         WebCamDevice[] devices = WebCamTexture.devices;
         camTexture = new WebCamTexture(devices[CAM_INDEX].name);
-        
+
         if (!camTexture.isPlaying) camTexture.Play();
         GetComponent<MeshRenderer>().material.mainTexture = camTexture;
+
+        var scale = transform.localScale;
+        transform.localScale = new Vector3(scale.x, scale.y * camTexture.texelSize.y / camTexture.texelSize.x, scale.z);
     }
 }

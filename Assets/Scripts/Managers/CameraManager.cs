@@ -7,7 +7,8 @@ public enum CameraType
     Default,
     MC,
     Player,
-    TV
+    TV,
+    Other
 }
 
 public class CameraManager : Singleton<CameraManager>

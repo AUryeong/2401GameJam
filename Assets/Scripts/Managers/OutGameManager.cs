@@ -48,7 +48,6 @@ public class OutGameManager : MonoBehaviour
             yield return fadeInOutImage.DOFade(1, FADE_IN_OUT_DURATION).WaitForCompletion();
             image.gameObject.SetActive(true);
             yield return fadeInOutImage.DOFade(0, FADE_IN_OUT_DURATION).WaitForCompletion();
-            SoundManager.Instance.PlaySound("Button");
             yield return new WaitForSeconds(FADE_IN_OUT_DURATION / 2);
         }
 
