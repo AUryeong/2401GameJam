@@ -32,9 +32,9 @@ namespace UI
             scriptText.text = string.Empty;
         }
 
-        public override IEnumerator Wait()
+        public override IEnumerator Wait(string parameter = "")
         {
-            if (dialog.cameraPos != CameraType.None)
+            if (dialog.cameraPos.Count > 0)
                 CameraManager.Instance.ChangeDisplay(dialog.cameraPos);
 
             foreach (var character in dialog.characters)
@@ -53,9 +53,12 @@ namespace UI
                     string typingText = str.Typing(i);
                     scriptText.text = typingText;
 
+                    if (Input.GetKey(KeyCode.F))
+                        break;
+
                     if (prevLength < typingText.Length)
                     {
-                        SoundManager.Instance.PlaySound("Dialog", ESoundType.Sfx, 1, 1.5f);
+                        SoundManager.Instance.PlaySound("Dialog", SoundType.Sfx, 1, 1.5f);
                         prevLength = typingText.Length;
                     }
 
@@ -73,10 +76,23 @@ namespace UI
 
             if (dialog.functionClassName.IsEmptyOrWhiteSpace()) yield break;
 
+            switch (dialog.functionClassName)
+            {
+                case nameof(Dialog):
+                    var uiDialog = UIManager.Instance.Get(nameof(UIDialog)) as UIDialog;
+                    uiDialog.Active();
+                    foreach (var newDialog in DataManager.Instance.GetDialogs(dialog.functionParameter).dialogs)
+                    {
+                        uiDialog.SetDialog(newDialog);
+                        yield return uiDialog.Wait();
+                    }
+                    yield break;
+            }
+            
             var uiWait = UIManager.Instance.Get(dialog.functionClassName.Trim());
             
             uiWait.Active();
-            yield return uiWait.Wait();
+            yield return uiWait.Wait(dialog.functionParameter);
         }
     }
 }

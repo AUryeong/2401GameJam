@@ -19,7 +19,7 @@ namespace UI
             introText.text = string.Empty;
         }
         
-        public override IEnumerator Wait()
+        public override IEnumerator Wait(string parameter = "")
         {
             string str = INTRO_TEXT;
             string typingText = string.Empty;
@@ -35,7 +35,7 @@ namespace UI
                 yield return waitForCursor;
             }
 
-            SoundManager.Instance.PlaySound("Keyboard_Typing", ESoundType.Bgm);
+            SoundManager.Instance.PlaySound("Keyboard_Typing", SoundType.Bgm);
             int strLength = str.GetTypingLength();
             for (int i = 0; i <= strLength; i++)
             {
@@ -48,13 +48,13 @@ namespace UI
 
             introText.text = str;
 
-            SoundManager.Instance.PlaySound("", ESoundType.Bgm);
+            SoundManager.Instance.PlaySound("", SoundType.Bgm);
 
             yield return new WaitForSeconds(2);
 
             introText.fontStyle = FontStyles.Normal;
-            introText.text = typingText + INTRO_TITLE_TEXT;
-            SoundManager.Instance.PlaySound("Ding", ESoundType.Sfx);
+            introText.text = str + INTRO_TITLE_TEXT;
+            SoundManager.Instance.PlaySound("Ding", SoundType.Sfx);
             
             yield return new WaitForSeconds(2);
         }

@@ -9,7 +9,7 @@ namespace UI
 {
     public abstract class WaitBehaviour : MonoBehaviour
     {
-        public abstract IEnumerator Wait();
+        public abstract IEnumerator Wait(string parameter = "");
 
         public virtual void Active()
         {

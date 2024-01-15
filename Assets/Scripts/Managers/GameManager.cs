@@ -28,7 +28,7 @@ public class GameManager : Singleton<GameManager>
 
         var uiDialog = uiManager.Get(nameof(UIDialog)) as UIDialog;
         uiDialog.Active();
-        foreach (var dialog in DataManager.Instance.dialogs)
+        foreach (var dialog in DataManager.Instance.GetDialogs("시작").dialogs)
         {
             uiDialog.SetDialog(dialog);
             yield return uiDialog.Wait();

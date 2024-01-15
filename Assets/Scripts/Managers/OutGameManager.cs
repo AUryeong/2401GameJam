@@ -28,7 +28,7 @@ public class OutGameManager : MonoBehaviour
 
     private void Start()
     {
-        SoundManager.Instance.PlaySound("Wind", ESoundType.Bgm);
+        SoundManager.Instance.PlaySound("Wind", SoundType.Bgm);
     }
 
     private void SelectName()
@@ -52,7 +52,7 @@ public class OutGameManager : MonoBehaviour
         }
 
         yield return fadeInOutImage.DOFade(1, FADE_IN_OUT_DURATION * 2).WaitForCompletion();
-        SoundManager.Instance.PlaySound("", ESoundType.Bgm);
+        SoundManager.Instance.PlaySound("", SoundType.Bgm);
         yield return new WaitForSeconds(FADE_IN_OUT_DURATION / 2);
 
         SceneManager.LoadScene("InGame");

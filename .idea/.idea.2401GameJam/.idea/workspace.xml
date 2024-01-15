@@ -2,46 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4c1d88f-0351-4cda-b479-8934f802d3f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITextQuizButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UITextQuizButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuiz.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuiz.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuizPopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuizPopup.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2401GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2401GameJam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Angry.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Angry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Default.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Happy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Happy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Surprise.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice_Surprise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Huwa.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Huwa.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogManagerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DialogManagerButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/CameraManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DataManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/OutGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/OutGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Utility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Utility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIDialog.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIGpt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIGpt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIIntro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIIntro.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITitle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITitle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Angry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Angry.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Default.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Happy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Happy.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Surprise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/A_Surprise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/Materials/A_Angry.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/A/Materials/A_Angry.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Angry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Angry.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Default.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Happy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Happy.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Surprise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Alice/Alice_Surprise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Angry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Angry.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Default.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Happy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Happy.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Surprise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Huwa_Surprise.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Materials/Huwa_Angry.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Character/Huwa/Materials/Huwa_Angry.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebCamSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebCamSample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/UI_Option.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/UI_Option.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/UI_Question3_Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/UI_Question3_Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,22 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\ddott\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\ddott\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\ddott\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ddott\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ddott\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ddott\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../sb/Narak/2401GameJam2.exe" />
@@ -135,7 +128,8 @@
       <workItem from="1705245337588" duration="13975000" />
       <workItem from="1705264016622" duration="513000" />
       <workItem from="1705264776938" duration="224000" />
-      <workItem from="1705304667194" duration="5379000" />
+      <workItem from="1705304667194" duration="7929000" />
+      <workItem from="1705316398463" duration="13813000" />
     </task>
     <servers />
   </component>
@@ -146,5 +140,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs</url>
+          <line>34</line>
+          <properties documentPath="D:\user\2401GameJam\Assets\Scripts\Managers\GameManager.cs" initialLine="34" containingFunctionPresentation="method 'GameCoroutine'">
+            <startOffsets>
+              <option value="915" />
+            </startOffsets>
+            <endOffsets>
+              <option value="916" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

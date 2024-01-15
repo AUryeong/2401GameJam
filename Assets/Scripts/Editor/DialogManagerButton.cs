@@ -11,8 +11,5 @@ public class DialogManagerButton : Editor
         DataManager manager = (DataManager)target;
         if (GUILayout.Button(nameof(manager.LoadData)))
             manager.LoadData();
-        
-        if (GUILayout.Button(nameof(manager.ReLoadData)))
-            manager.ReLoadData();
     }
 }
