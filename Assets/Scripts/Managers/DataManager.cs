@@ -13,10 +13,7 @@ public class DataManager : Singleton<DataManager>
 
     public string PlayerName
     {
-        get
-        {
-            return playerName;
-        }
+        get { return playerName; }
         set
         {
             playerName = value;
@@ -29,19 +26,22 @@ public class DataManager : Singleton<DataManager>
     private string playerName = "서경훈";
 
     private string jobName = "튀르키예 참전 용사";
-    private Dictionary<string, string> jobDict = new Dictionary<string, string>()
+    private readonly Dictionary<string, string> jobDict = new()
     {
-        {"채주영","게임잼 멘토" }, 
-        {"권용현", "게임잼 멘토" },
-        {"서경훈","튀르키예 참전 용사" }
-
+        { "채주영", "게임잼 멘토" },
+        { "권용현", "게임잼 멘토" },
+        { "박경은", "서울 디지텍고 교사" },
+        { "정동엽", "서울 디지텍고 교사" },
+        { "김명수", "서울 디지텍고 교사" },
+        { "류주희", "서울 디지텍고 교사" },
     };
-    
+
     [SerializeField] private List<Dialogs> dialogList = new();
-    private Dictionary<string, Dialogs> dialogDict = new();
+    private readonly Dictionary<string, Dialogs> dialogDict = new();
 
     public readonly Dictionary<string, Texture> characterFaceDict = new();
     public readonly Dictionary<string, Material> characterMaterials = new();
+    public readonly Dictionary<string, Sprite> peopleDict = new();
 
     protected override void OnCreated()
     {
@@ -56,6 +56,11 @@ public class DataManager : Singleton<DataManager>
         var materials = Resources.LoadAll<Material>("Characters");
         foreach (var material in materials)
             characterMaterials.Add(material.name, material);
+
+        peopleDict.Clear();
+        var sprites = Resources.LoadAll<Sprite>("Peoples");
+        foreach (var sprite in sprites)
+            peopleDict.Add(sprite.name, sprite);
 
         foreach (var dialogs in dialogList)
             dialogDict.Add(dialogs.sheetName, dialogs);
@@ -84,7 +89,7 @@ public class DataManager : Singleton<DataManager>
         yield return defaultWww.SendWebRequest();
 
         dialogList.Clear();
-        
+
         string sheetData = defaultWww.downloadHandler.text;
         foreach (var line in sheetData.Split('\n'))
         {
@@ -151,8 +156,8 @@ public class DataManager : Singleton<DataManager>
                     });
                 }
             }
-
-            Debug.Log("Finished");
         }
+
+        Debug.Log("Finished");
     }
 }

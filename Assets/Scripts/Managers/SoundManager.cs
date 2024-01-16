@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +24,8 @@ public class SoundManager : Singleton<SoundManager>
     private readonly Dictionary<SoundType, AudioInfo> audioInfos = new();
 
     protected override bool IsDontDestroying => true;
-    private const string AUDIO_SOURCE_NAME_BY_PITCH = "Pitch"; 
+    private const string AUDIO_SOURCE_NAME_BY_PITCH = "Pitch";
+    private Coroutine bgmFadeCoroutine;
 
     protected override void OnCreated()
     {
@@ -31,22 +33,10 @@ public class SoundManager : Singleton<SoundManager>
         foreach (var clip in clips)
             audioClips.Add(clip.name, clip);
 
-        for (var soundType = SoundType.Bgm; soundType < SoundType.Max;soundType++)
+        for (var soundType = SoundType.Bgm; soundType < SoundType.Max; soundType++)
             AddAudioInfo(soundType);
 
-        var audioSource = audioInfos[SoundType.Sfx].audioSource;
-        PoolManager.Instance.JoinPoolingData(AUDIO_SOURCE_NAME_BY_PITCH, audioSource.gameObject);
-    }
-
-    protected override void OnReset()
-    {
-        StopAllSounds();
-    }
-
-    public void StopAllSounds()
-    {
-        foreach (var audioInfo in audioInfos.Values)
-            audioInfo.audioSource.Stop();
+        PoolManager.Instance.JoinPoolingData(AUDIO_SOURCE_NAME_BY_PITCH, audioInfos[SoundType.Sfx].audioSource.gameObject);
     }
 
     public void UpdateVolume(SoundType soundType, float sound)
@@ -65,7 +55,7 @@ public class SoundManager : Singleton<SoundManager>
             audioSource = audioSourceObj.AddComponent<AudioSource>(),
             audioVolume = 1
         };
-        if(soundType == SoundType.Bgm)
+        if (soundType == SoundType.Bgm)
             audioInfo.audioSource.loop = true;
         audioInfos.Add(soundType, audioInfo);
     }
@@ -75,17 +65,70 @@ public class SoundManager : Singleton<SoundManager>
         return audioInfos[soundType].audioSource;
     }
 
-    public AudioClip PlaySound(string soundName, SoundType soundType = SoundType.Sfx, float multipleVolume = 1, float pitch = 1)
+    private IEnumerator PlayFadeBgm(string soundName, float multipleVolume = 1, float pitch = 1)
     {
+        var audioInfo = audioInfos[SoundType.Bgm];
+        var audioSource = audioInfo.audioSource;
+
+        float volume = audioInfo.audioVolume * multipleVolume;
+        if (audioSource.isPlaying)
+        {
+            while (audioSource.volume > 0)
+            {
+                audioSource.volume -= Time.deltaTime * volume;
+                yield return null;
+            }
+
+            if (string.IsNullOrEmpty(soundName))
+            {
+                audioSource.Stop();
+                yield break;
+            }
+        }
+
+        if (!audioClips.ContainsKey(soundName))
+        {
+            Debug.Log("그 소리 없음!"); 
+            yield break;
+        }
+
+        var clip = audioClips[soundName];
+
+        audioSource.clip = clip;
+        audioSource.volume = 0;
+        audioSource.time = 0;
+        audioSource.pitch = pitch;
+        audioSource.Play();
+
+        while (audioSource.volume < volume)
+        {
+            audioSource.volume += Time.deltaTime * volume;
+            yield return null;
+        }
+
+        audioSource.volume = volume;
+    }
+
+    public void PlaySound(string soundName, SoundType soundType = SoundType.Sfx, float multipleVolume = 1, float pitch = 1)
+    {
+        if (soundType == SoundType.Bgm)
+        {
+            if (bgmFadeCoroutine != null)
+                StopCoroutine(bgmFadeCoroutine);
+            bgmFadeCoroutine = StartCoroutine(PlayFadeBgm(soundName, multipleVolume, pitch));
+            return;
+        }
+
         if (string.IsNullOrEmpty(soundName))
         {
             audioInfos[soundType].audioSource.Stop();
-            return null;
+            return;
         }
+
         if (!audioClips.ContainsKey(soundName))
         {
             Debug.Log("그 소리 없음!");
-            return null;
+            return;
         }
 
         var clip = audioClips[soundName];
@@ -98,16 +141,6 @@ public class SoundManager : Singleton<SoundManager>
             audioSource.pitch = pitch;
         }
 
-        if (soundType.Equals(SoundType.Bgm))
-        {
-            audioSource.clip = clip;
-            audioSource.volume = audioInfo.audioVolume * multipleVolume;
-            audioSource.time = 0;
-            audioSource.Play();
-        }
-        else //SFX
-            audioSource.PlayOneShot(clip, audioInfo.audioVolume * multipleVolume);
-
-        return clip;
+        audioSource.PlayOneShot(clip, audioInfo.audioVolume * multipleVolume);
     }
 }

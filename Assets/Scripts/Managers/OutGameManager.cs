@@ -14,6 +14,7 @@ public class OutGameManager : MonoBehaviour
     [SerializeField] private Image[] narrationImages;
 
     private const float FADE_IN_OUT_DURATION = 2;
+    private bool isLoading = false;
 
     private void Awake()
     {
@@ -31,8 +32,18 @@ public class OutGameManager : MonoBehaviour
         SoundManager.Instance.PlaySound("Wind", SoundType.Bgm);
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Return))
+            SelectName();
+    }
+
     private void SelectName()
     {
+        if (isLoading) return;
+        
+        isLoading = true;
+        
         SoundManager.Instance.PlaySound("Button");
         DataManager.Instance.PlayerName = nameInput.text;
         StartCoroutine(SelectNameCoroutine());

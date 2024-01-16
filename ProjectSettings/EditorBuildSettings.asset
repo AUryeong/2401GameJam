@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Thumbnail.unity
+    guid: 1eaeaf71f91ccd041aeb03914d35f1c6
+  - enabled: 1
     path: Assets/Scenes/OutGame.unity
     guid: 63f381eea8b9ecb4095aa92642f75260
   - enabled: 1

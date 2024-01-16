@@ -69,10 +69,14 @@ namespace UI
                 scriptText.text = str;
             }
 
-            yield return WAIT_FOR_DIALOG;
 
-            if (dialog.waitSeconds > 0)
-                yield return new WaitForSeconds(dialog.waitSeconds);
+            if (!Input.GetKey(KeyCode.F))
+            {
+                yield return WAIT_FOR_DIALOG;
+
+                if (dialog.waitSeconds > 0)
+                    yield return new WaitForSeconds(dialog.waitSeconds);
+            }
 
             if (dialog.functionClassName.IsEmptyOrWhiteSpace()) yield break;
 
@@ -86,6 +90,9 @@ namespace UI
                         uiDialog.SetDialog(newDialog);
                         yield return uiDialog.Wait();
                     }
+                    yield break;
+                case "Sound":
+                    SoundManager.Instance.PlaySound(dialog.functionParameter);
                     yield break;
                 case "DisableTV":
                     UIManager.Instance.DeActiveTV();

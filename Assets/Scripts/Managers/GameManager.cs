@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UI;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -12,18 +14,18 @@ public class GameManager : Singleton<GameManager>
     private IEnumerator GameCoroutine()
     {
         var uiManager = UIManager.Instance;
-        
+
         var wait = uiManager.Get(nameof(UIIntro));
         wait.Active();
-        
+
         yield return uiManager.FadeOut();
-        
+
         yield return wait.Wait();
         CameraManager.Instance.ChangeDisplay(CameraType.MC);
         yield return uiManager.FadeIn();
-        
+
         wait.DeActive();
-        
+
         yield return uiManager.FadeOut();
 
         var uiDialog = uiManager.Get(nameof(UIDialog)) as UIDialog;
@@ -33,5 +35,8 @@ public class GameManager : Singleton<GameManager>
             uiDialog.SetDialog(dialog);
             yield return uiDialog.Wait();
         }
+
+        WebCam.Instance.SavePicture();
+        SceneManager.LoadScene("Thumbnail");
     }
 }

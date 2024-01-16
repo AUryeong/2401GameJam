@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -54,10 +53,15 @@ namespace UI
 
         public override IEnumerator Wait(string parameter = "")
         {
-            selectIndex = -1;
-            quizBase.gameObject.SetActive(true);
+            SoundManager.Instance.PlaySound("Quiz", SoundType.Sfx);
+            SoundManager.Instance.PlaySound("Quiz_Bgm", SoundType.Bgm, 0.2f);
 
             UIManager.Instance.Get(nameof(UIDialog)).DeActive();
+
+            yield return new WaitForSeconds(2);
+            
+            selectIndex = -1;
+            quizBase.gameObject.SetActive(true);
 
             var quizTexts = parameter.Split('\\');
             var quizSelects = quizTexts[1].Split(',');
@@ -72,20 +76,20 @@ namespace UI
             }
 
             int cameraChangeIdx = 0;
-            var waitForChangeCamera = new WaitForSeconds(3);
+            var waitForChangeCamera = new WaitForSeconds(4.5f);
             while (selectIndex < 0)
             {
                 cameraChangeIdx = (cameraChangeIdx + 1) % 3;
                 switch (cameraChangeIdx)
                 {
                     case 0:
-                        CameraManager.Instance.ChangeDisplay(CameraType.Player); 
+                        CameraManager.Instance.ChangeDisplay(new List<CameraType>() { CameraType.Alice, CameraType.Other});
                         break;
                     case 1:
-                        CameraManager.Instance.ChangeDisplay(CameraType.Default);
+                        CameraManager.Instance.ChangeDisplay(CameraType.Player); 
                         break;
                     case 2:
-                        CameraManager.Instance.ChangeDisplay(new List<CameraType>() { CameraType.TV, CameraType.Other});
+                        CameraManager.Instance.ChangeDisplay(CameraType.Default);
                         break;
                 }
 
@@ -111,16 +115,18 @@ namespace UI
                 waitSeconds = 1f,
                 cameraPos = new List<CameraType>() { CameraType.MC },
                 characters = new List<Dialog.Character>() { 
-                    new Dialog.Character() { 
+                    new() { 
                         name = "Huwa", 
                         face = Dialog.Character.FaceType.Surprise
                     },
-                    new Dialog.Character() {
+                    new() {
                         name = "Alice",
                         face = Dialog.Character.FaceType.Surprise
                     }
                 }
             });
+            yield return uiDialog.Wait();
+            SoundManager.Instance.PlaySound("", SoundType.Bgm);
             foreach (var dialog in DataManager.Instance.GetDialogs(quizSelects[selectIndex]).dialogs)
             {
                 uiDialog.SetDialog(dialog);

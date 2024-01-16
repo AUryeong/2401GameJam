@@ -34,9 +34,10 @@ namespace UI
             yield return new WaitForSeconds(1);
             yield return titleBase.DOFade(1, 1).WaitForCompletion();
             yield return titleText.DOFade(1, 1).WaitForCompletion();
+            
+            SoundManager.Instance.PlaySound("Alarm");
             yield return scriptText.DOFade(1, 1).WaitForCompletion();
-
-            yield return new WaitForSeconds(2);
+            
             var wait = UIManager.Instance.Get(nameof(UITextQuizPopup));
             wait.Active();
             yield return wait.Wait(parameter);
