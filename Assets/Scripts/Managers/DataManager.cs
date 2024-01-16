@@ -28,10 +28,12 @@ public class DataManager : Singleton<DataManager>
     }
     private string playerName = "서경훈";
 
-    private string jobName = "서울 디지텍고 학생";
+    private string jobName = "튀르키예 참전 용사";
     private Dictionary<string, string> jobDict = new Dictionary<string, string>()
     {
-        {"채주영","게임잼 멘토" },
+        {"채주영","게임잼 멘토" }, 
+        {"권용현", "게임잼 멘토" },
+        {"서경훈","튀르키예 참전 용사" }
 
     };
     
@@ -57,8 +59,6 @@ public class DataManager : Singleton<DataManager>
 
         foreach (var dialogs in dialogList)
             dialogDict.Add(dialogs.sheetName, dialogs);
-
-        LoadData();
     }
 
     public string GetFormat(string text)

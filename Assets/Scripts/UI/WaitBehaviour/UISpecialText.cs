@@ -11,7 +11,7 @@ public class UISpecialText : WaitBehaviour
     public override IEnumerator Wait(string parameter = "")
     {
         specialText.gameObject.SetActive(true);
-        specialText.text = parameter;
+        specialText.text = DataManager.Instance.GetFormat(parameter);
 
         specialText.color = specialText.color.GetChangeAlpha(0);
         yield return specialText.DOFade(1, 1.5f).WaitForCompletion();

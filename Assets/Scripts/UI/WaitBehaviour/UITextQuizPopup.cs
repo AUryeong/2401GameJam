@@ -75,8 +75,19 @@ namespace UI
             var waitForChangeCamera = new WaitForSeconds(3);
             while (selectIndex < 0)
             {
-                cameraChangeIdx = (cameraChangeIdx + 1) % 2;
-                CameraManager.Instance.ChangeDisplay(cameraChangeIdx == 0 ? CameraType.Player : CameraType.Default);
+                cameraChangeIdx = (cameraChangeIdx + 1) % 3;
+                switch (cameraChangeIdx)
+                {
+                    case 0:
+                        CameraManager.Instance.ChangeDisplay(CameraType.Player); 
+                        break;
+                    case 1:
+                        CameraManager.Instance.ChangeDisplay(CameraType.Default);
+                        break;
+                    case 2:
+                        CameraManager.Instance.ChangeDisplay(new List<CameraType>() { CameraType.TV, CameraType.Other});
+                        break;
+                }
 
                 yield return waitForChangeCamera;
             }
