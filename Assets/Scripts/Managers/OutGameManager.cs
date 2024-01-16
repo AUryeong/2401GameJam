@@ -25,6 +25,11 @@ public class OutGameManager : MonoBehaviour
 
         foreach (var image in narrationImages)
             image.gameObject.SetActive(false);
+        
+        DataManager.Instance.PlayerName = "";
+        DataManager.Instance.characterMaterials["A"].mainTexture = DataManager.Instance.characterFaceDict[$"A_Default"];
+        DataManager.Instance.characterMaterials["Huwa"].mainTexture = DataManager.Instance.characterFaceDict[$"Huwa_Default"];
+        DataManager.Instance.characterMaterials["Alice"].mainTexture = DataManager.Instance.characterFaceDict[$"Alice_Default"];
     }
 
     private void Start()

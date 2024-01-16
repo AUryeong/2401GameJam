@@ -24,10 +24,6 @@ public class ThumbnailManager : MonoBehaviour
 
     private void Reset()
     {
-        DataManager.Instance.PlayerName = "";
-        DataManager.Instance.characterMaterials["A"].mainTexture = DataManager.Instance.characterFaceDict[$"A_Default"];
-        DataManager.Instance.characterMaterials["Huwa"].mainTexture = DataManager.Instance.characterFaceDict[$"Huwa_Default"];
-        DataManager.Instance.characterMaterials["Alice"].mainTexture = DataManager.Instance.characterFaceDict[$"Alice_Default"];
         SceneManager.LoadScene("OutGame");
     }
     

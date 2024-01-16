@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4c1d88f-0351-4cda-b479-8934f802d3f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2401GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2401GameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Alice.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Alice.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Characters/Huwa.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Characters/Huwa.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OutGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OutGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/DataManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Thumbnail.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Thumbnail.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/OutGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/OutGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UIDialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuiz.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuizPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WaitBehaviour/UITextQuizPopup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebCamSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebCam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebCamSample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebCam.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/ThumbnailManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/ThumbnailManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +106,7 @@
       <workItem from="1705304667194" duration="7929000" />
       <workItem from="1705316398463" duration="13813000" />
       <workItem from="1705401184465" duration="3008000" />
-      <workItem from="1705410883249" duration="13389000" />
+      <workItem from="1705410883249" duration="13929000" />
     </task>
     <servers />
   </component>
