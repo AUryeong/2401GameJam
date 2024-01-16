@@ -26,7 +26,7 @@ namespace UI
 
             nameBase.gameObject.SetActive(!dialog.nameText.IsEmptyOrWhiteSpace());
             if (!dialog.nameText.IsEmptyOrWhiteSpace())
-                nameText.text = string.Format(dialog.nameText, DataManager.Instance.playerName);
+                nameText.text = DataManager.Instance.GetFormat(dialog.nameText);
             
             scriptBase.gameObject.SetActive(!dialog.scriptText.IsEmptyOrWhiteSpace());
             scriptText.text = string.Empty;
@@ -39,13 +39,13 @@ namespace UI
 
             foreach (var character in dialog.characters)
             {
-                var faceTexture = DataManager.Instance.characterFaceDict[$"{character.name}_{character.face.ToString()}"];
+                var faceTexture = DataManager.Instance.characterFaceDict[$"{character.name}_{character.face}"];
                 DataManager.Instance.characterMaterials[character.name].mainTexture = faceTexture;
             }
 
             if (!dialog.scriptText.IsEmptyOrWhiteSpace())
             {
-                string str = string.Format(dialog.scriptText, DataManager.Instance.playerName);
+                string str = DataManager.Instance.GetFormat(dialog.scriptText);
                 int strLength = str.GetTypingLength();
                 int prevLength = 0;
                 for (int i = 1; i <= strLength; i++)
@@ -86,6 +86,9 @@ namespace UI
                         uiDialog.SetDialog(newDialog);
                         yield return uiDialog.Wait();
                     }
+                    yield break;
+                case "DisableTV":
+                    UIManager.Instance.DeActiveTV();
                     yield break;
             }
             

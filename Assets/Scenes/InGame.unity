@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502658, g: 0.37139305, b: 0.4960094, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -669,7 +669,7 @@ Transform:
   m_Children:
   - {fileID: 120822130}
   m_Father: {fileID: 8622193675353698256}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &88648114
 MonoBehaviour:
@@ -1192,6 +1192,7 @@ MonoBehaviour:
   - {fileID: 297807790}
   - {fileID: 892657511}
   - {fileID: 1611960499}
+  - {fileID: 1653351798}
 --- !u!1 &269387000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4091,9 +4092,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138303832}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.81476945, y: -0.00077700615, z: 3.28}
-  m_LocalScale: {x: 1.25, y: 2, z: 1.6666664}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.6, y: 0, z: 3.65}
+  m_LocalScale: {x: 1.13, y: 1.808, z: 1.5066664}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9001107482177118075}
   m_RootOrder: 1
@@ -4283,6 +4284,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168327656}
   m_CullTransparentMesh: 1
+--- !u!1 &1175601748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175601749}
+  - component: {fileID: 1175601751}
+  - component: {fileID: 1175601750}
+  m_Layer: 5
+  m_Name: Special Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1175601749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175601748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1653351797}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 244.13}
+  m_SizeDelta: {x: -200, y: 350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1175601750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175601748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uBBF8\uBBF8\uBBF8\uB204\uC758 \uC120\uD0DD <#000000>2\uBC88 \uBAA8\uC544"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3281289ac1689024493495a5f129c011, type: 2}
+  m_sharedMaterial: {fileID: 4712151667171255823, guid: 3281289ac1689024493495a5f129c011, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 110
+  m_fontSizeBase: 110
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 110
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1175601751
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175601748}
+  m_CullTransparentMesh: 1
 --- !u!1 &1255419987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,7 +4597,7 @@ RectTransform:
   m_Children:
   - {fileID: 1943122476}
   m_Father: {fileID: 1465590265}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5660,6 +5796,88 @@ Transform:
   m_Father: {fileID: 1423088972}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1001 &1397622399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8622193675353698256}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.942
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.909
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.572786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.41462785
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.41462785
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.572786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -71.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96528e108c0ec0e4888d919ff4ee45e6, type: 2}
+    - target: {fileID: 919132149155446097, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+      propertyPath: m_Name
+      value: Ganpan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+--- !u!4 &1397622400 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e0b1ecdedc6e1c488cc635a76c71a09, type: 3}
+  m_PrefabInstance: {fileID: 1397622399}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1404396521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5996,6 +6214,7 @@ RectTransform:
   - {fileID: 297807789}
   - {fileID: 383223383}
   - {fileID: 1611960498}
+  - {fileID: 1653351797}
   - {fileID: 2113241551}
   - {fileID: 1259360082}
   m_Father: {fileID: 221983537}
@@ -6262,7 +6481,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168327657}
-  - {fileID: 1816971308}
   m_Father: {fileID: 1465590265}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6287,7 +6505,6 @@ MonoBehaviour:
   titleText: {fileID: 736535692}
   originOptionButton: {fileID: 1971174985}
   optionParent: {fileID: 791556808}
-  specialText: {fileID: 1816971309}
 --- !u!223 &1611960500
 Canvas:
   m_ObjectHideFlags: 0
@@ -6326,6 +6543,79 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &1653351796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653351797}
+  - component: {fileID: 1653351799}
+  - component: {fileID: 1653351798}
+  m_Layer: 5
+  m_Name: Special Text Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1653351797
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653351796}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1175601749}
+  m_Father: {fileID: 1465590265}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1653351798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653351796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066f0cbc452275d47b4c2177e323537c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specialText: {fileID: 1175601750}
+--- !u!223 &1653351799
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653351796}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 1000
+  m_TargetDisplay: 0
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,141 +6943,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787371633}
-  m_CullTransparentMesh: 1
---- !u!1 &1816971307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1816971308}
-  - component: {fileID: 1816971310}
-  - component: {fileID: 1816971309}
-  m_Layer: 5
-  m_Name: Special Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1816971308
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816971307}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1611960498}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 244.13}
-  m_SizeDelta: {x: -200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1816971309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816971307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "\uBBF8\uBBF8\uBBF8\uB204\uC758 \uC120\uD0DD <#000000>2\uBC88 \uBAA8\uC544"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3281289ac1689024493495a5f129c011, type: 2}
-  m_sharedMaterial: {fileID: 4712151667171255823, guid: 3281289ac1689024493495a5f129c011, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 110
-  m_fontSizeBase: 110
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 110
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1816971310
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816971307}
   m_CullTransparentMesh: 1
 --- !u!1 &1875146975
 GameObject:
@@ -7283,7 +7438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6f2483c52d4a76bafbdc94c70e3598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: "\uC11C\uACBD\uD6C8"
   dialogList:
   - sheetName: "\uC2DC\uC791"
     sheetID: 760843800
@@ -7303,8 +7457,7 @@ MonoBehaviour:
       - name: Alice
         face: 0
     - nameText: "\uD6C4\uC640"
-      scriptText: "\uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50 \uD559\uC0DD,
-        {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
+      scriptText: "{1} \uD559\uC0DD, {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
       cameraPos: 01000000
       waitSeconds: 0
       functionClassName: 
@@ -7323,7 +7476,9 @@ MonoBehaviour:
       waitSeconds: 1.5
       functionClassName: 
       functionParameter: 
-      characters: []
+      characters:
+      - name: A
+        face: 1
     - nameText: "\uD6C4\uC640"
       scriptText: "\uB098\uC640\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
       cameraPos: 01000000
@@ -7361,7 +7516,7 @@ MonoBehaviour:
       characters: []
     - nameText: "\uCC57GPT"
       scriptText: "{0}\uC740(\uB294), \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50
-        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 \uD559\uC0DD\uC785\uB2C8\uB2E4."
+        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 {1}\uC785\uB2C8\uB2E4."
       cameraPos: 04000000
       waitSeconds: 0.5
       functionClassName: 
@@ -7502,6 +7657,948 @@ MonoBehaviour:
       characters:
       - name: Huwa
         face: 0
+  - sheetName: "\uC2EC\uC7AC\uD6C8"
+    sheetID: 760843800
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2F9\uC2E0\uB3C4 \uC5B8\uC81C\uB098 \uB098\uB77D\uC744 \uAC04\uB2E4.
+        \uC624\uB298\uC758 \uAC8C\uC2A4\uD2B8,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+      - name: A
+        face: 0
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{1} \uD559\uC0DD, {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uAD6C\uACBD\uAFBC"
+      scriptText: "\uC640\uC544!"
+      cameraPos: 05000000
+      waitSeconds: 1.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: A
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uC640\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC790 \uADF8\uB7EC\uBA74, {0}\uB2D8\uC5D0 \uB300\uD574 \uC798
+        \uBAA8\uB974\uC2DC\uB294 \uBD84\uB4E4\uC744 \uC704\uD574\uC11C"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC804\uC9C0\uC804\uB2A5\uD55C \uCC57GPT\uB97C \uD1B5\uD574\uC11C
+        \uC5B4\uB5A4\uBD84\uC774\uC2E0\uC9C0 \uD55C\uBC88 \uC54C\uC544\uBCF4\uB3C4\uB85D
+        \uD558\uACA0\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 1
+      functionClassName: Gpt
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294), \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50
+        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 {1}\uC785\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294) \uCC9C\uC7AC\uC801\uC778 \uC804\uB7B5\uACFC
+        \uAC15\uB825\uD55C \uBB34\uB825\uC744 \uBC14\uD0D5\uC73C\uB85C"
+      cameraPos: 03000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50\uC758
+        \uBA85\uC131\uC744 \uC704\uD574"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "500\uAC1C\uAC00 \uB118\uB294 \uD559\uAD50\uB97C \uC81C\uD328\uD558\uBA70,
+        \uD559\uAD50\uB97C \uD64D\uBCF4\uD558\uC600\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Alice
+        face: 1
+    - nameText: "\uCC57GPT"
+      scriptText: "\uB610\uD55C, {0}\uC740(\uB294) \uD504\uB85C\uC81D\uD2B8\uB97C
+        \uC77C\uBD80\uB85C \uB9DD\uAC00\uD2B8\uB9AC\uAE38 \uC88B\uC544\uD558\uB294"
+      cameraPos: 03000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC5C4\uC758 \uAE30\uC9C8\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8."
+      cameraPos: 02000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uD504\uB85C\uC81D\uD2B8 \uB9DD\uAC00\uD2B8\uB9AC\uB294\uAC78
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uB77D\uD034\uC988\uC1FC, \uC2DC\uC791\uD569\uB2C8\uB2E4."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: Title
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC774\uB807\uAC8C, \uAC8C\uC784\uC7BC\uB3C4 \uC5F4\uC5B4\uC8FC\uC2DC\uACE0
+        \uD559\uAD50\uD55C\uD14C \uACE0\uB9C8\uC6CC\uD558\uACE0 \uC788\uB294\uB370,"
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8\uB3C4 \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50,
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC88B\uC2B5\uB2C8\uB2E4. \uADF8\uB7EC\uBA74,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uBB38\uC81C, \uB098\uAC11\uB2C8\uB2E4."
+      cameraPos: 0200000003000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2E4\uC74C \uC911, \uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uB41C
+        \uC0AC\uB78C\uC774 \uC544\uB2CC \uC0AC\uB78C\uC744 \uACE8\uB77C\uC8FC\uC138\uC694!"
+      cameraPos: 020000000400000004000000
+      waitSeconds: 0
+      functionClassName: TextQuiz
+      functionParameter: "\uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uC774 \uC5C6\uB294
+        \uC0AC\uB78C\uC744 \uACE0\uB974\uC2DC\uC624\\\uC2EC\uC7AC\uD6C8,\uAE40\uC7AC\uC11D,\uACFD\uC77C\uCC9C,\uBC15\uC120\uAC11,\uBC15\uC778\uC219"
+      characters:
+      - name: Huwa
+        face: 0
+  - sheetName: "\uAE40\uC7AC\uC11D"
+    sheetID: 760843800
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2F9\uC2E0\uB3C4 \uC5B8\uC81C\uB098 \uB098\uB77D\uC744 \uAC04\uB2E4.
+        \uC624\uB298\uC758 \uAC8C\uC2A4\uD2B8,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+      - name: A
+        face: 0
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{1} \uD559\uC0DD, {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uAD6C\uACBD\uAFBC"
+      scriptText: "\uC640\uC544!"
+      cameraPos: 05000000
+      waitSeconds: 1.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: A
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uC640\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC790 \uADF8\uB7EC\uBA74, {0}\uB2D8\uC5D0 \uB300\uD574 \uC798
+        \uBAA8\uB974\uC2DC\uB294 \uBD84\uB4E4\uC744 \uC704\uD574\uC11C"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC804\uC9C0\uC804\uB2A5\uD55C \uCC57GPT\uB97C \uD1B5\uD574\uC11C
+        \uC5B4\uB5A4\uBD84\uC774\uC2E0\uC9C0 \uD55C\uBC88 \uC54C\uC544\uBCF4\uB3C4\uB85D
+        \uD558\uACA0\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 1
+      functionClassName: Gpt
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294), \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50
+        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 {1}\uC785\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294) \uCC9C\uC7AC\uC801\uC778 \uC804\uB7B5\uACFC
+        \uAC15\uB825\uD55C \uBB34\uB825\uC744 \uBC14\uD0D5\uC73C\uB85C"
+      cameraPos: 03000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50\uC758
+        \uBA85\uC131\uC744 \uC704\uD574"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "500\uAC1C\uAC00 \uB118\uB294 \uD559\uAD50\uB97C \uC81C\uD328\uD558\uBA70,
+        \uD559\uAD50\uB97C \uD64D\uBCF4\uD558\uC600\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Alice
+        face: 1
+    - nameText: "\uCC57GPT"
+      scriptText: "\uB610\uD55C, {0}\uC740(\uB294) \uD504\uB85C\uC81D\uD2B8\uB97C
+        \uC77C\uBD80\uB85C \uB9DD\uAC00\uD2B8\uB9AC\uAE38 \uC88B\uC544\uD558\uB294"
+      cameraPos: 03000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC5C4\uC758 \uAE30\uC9C8\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8."
+      cameraPos: 02000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uD504\uB85C\uC81D\uD2B8 \uB9DD\uAC00\uD2B8\uB9AC\uB294\uAC78
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uB77D\uD034\uC988\uC1FC, \uC2DC\uC791\uD569\uB2C8\uB2E4."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: Title
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC774\uB807\uAC8C, \uAC8C\uC784\uC7BC\uB3C4 \uC5F4\uC5B4\uC8FC\uC2DC\uACE0
+        \uD559\uAD50\uD55C\uD14C \uACE0\uB9C8\uC6CC\uD558\uACE0 \uC788\uB294\uB370,"
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8\uB3C4 \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50,
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC88B\uC2B5\uB2C8\uB2E4. \uADF8\uB7EC\uBA74,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uBB38\uC81C, \uB098\uAC11\uB2C8\uB2E4."
+      cameraPos: 0200000003000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2E4\uC74C \uC911, \uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uB41C
+        \uC0AC\uB78C\uC774 \uC544\uB2CC \uC0AC\uB78C\uC744 \uACE8\uB77C\uC8FC\uC138\uC694!"
+      cameraPos: 020000000400000004000000
+      waitSeconds: 0
+      functionClassName: TextQuiz
+      functionParameter: "\uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uC774 \uC5C6\uB294
+        \uC0AC\uB78C\uC744 \uACE0\uB974\uC2DC\uC624\\\uC2EC\uC7AC\uD6C8,\uAE40\uC7AC\uC11D,\uACFD\uC77C\uCC9C,\uBC15\uC120\uAC11,\uBC15\uC778\uC219"
+      characters:
+      - name: Huwa
+        face: 0
+  - sheetName: "\uACFD\uC77C\uCC9C"
+    sheetID: 760843800
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2F9\uC2E0\uB3C4 \uC5B8\uC81C\uB098 \uB098\uB77D\uC744 \uAC04\uB2E4.
+        \uC624\uB298\uC758 \uAC8C\uC2A4\uD2B8,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+      - name: A
+        face: 0
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{1} \uD559\uC0DD, {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uAD6C\uACBD\uAFBC"
+      scriptText: "\uC640\uC544!"
+      cameraPos: 05000000
+      waitSeconds: 1.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: A
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uC640\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC790 \uADF8\uB7EC\uBA74, {0}\uB2D8\uC5D0 \uB300\uD574 \uC798
+        \uBAA8\uB974\uC2DC\uB294 \uBD84\uB4E4\uC744 \uC704\uD574\uC11C"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC804\uC9C0\uC804\uB2A5\uD55C \uCC57GPT\uB97C \uD1B5\uD574\uC11C
+        \uC5B4\uB5A4\uBD84\uC774\uC2E0\uC9C0 \uD55C\uBC88 \uC54C\uC544\uBCF4\uB3C4\uB85D
+        \uD558\uACA0\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 1
+      functionClassName: Gpt
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294), \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50
+        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 {1}\uC785\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294) \uCC9C\uC7AC\uC801\uC778 \uC804\uB7B5\uACFC
+        \uAC15\uB825\uD55C \uBB34\uB825\uC744 \uBC14\uD0D5\uC73C\uB85C"
+      cameraPos: 03000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50\uC758
+        \uBA85\uC131\uC744 \uC704\uD574"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "500\uAC1C\uAC00 \uB118\uB294 \uD559\uAD50\uB97C \uC81C\uD328\uD558\uBA70,
+        \uD559\uAD50\uB97C \uD64D\uBCF4\uD558\uC600\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Alice
+        face: 1
+    - nameText: "\uCC57GPT"
+      scriptText: "\uB610\uD55C, {0}\uC740(\uB294) \uD504\uB85C\uC81D\uD2B8\uB97C
+        \uC77C\uBD80\uB85C \uB9DD\uAC00\uD2B8\uB9AC\uAE38 \uC88B\uC544\uD558\uB294"
+      cameraPos: 03000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC5C4\uC758 \uAE30\uC9C8\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8."
+      cameraPos: 02000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uD504\uB85C\uC81D\uD2B8 \uB9DD\uAC00\uD2B8\uB9AC\uB294\uAC78
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uB77D\uD034\uC988\uC1FC, \uC2DC\uC791\uD569\uB2C8\uB2E4."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: Title
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC774\uB807\uAC8C, \uAC8C\uC784\uC7BC\uB3C4 \uC5F4\uC5B4\uC8FC\uC2DC\uACE0
+        \uD559\uAD50\uD55C\uD14C \uACE0\uB9C8\uC6CC\uD558\uACE0 \uC788\uB294\uB370,"
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8\uB3C4 \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50,
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC88B\uC2B5\uB2C8\uB2E4. \uADF8\uB7EC\uBA74,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uBB38\uC81C, \uB098\uAC11\uB2C8\uB2E4."
+      cameraPos: 0200000003000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2E4\uC74C \uC911, \uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uB41C
+        \uC0AC\uB78C\uC774 \uC544\uB2CC \uC0AC\uB78C\uC744 \uACE8\uB77C\uC8FC\uC138\uC694!"
+      cameraPos: 020000000400000004000000
+      waitSeconds: 0
+      functionClassName: TextQuiz
+      functionParameter: "\uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uC774 \uC5C6\uB294
+        \uC0AC\uB78C\uC744 \uACE0\uB974\uC2DC\uC624\\\uC2EC\uC7AC\uD6C8,\uAE40\uC7AC\uC11D,\uACFD\uC77C\uCC9C,\uBC15\uC120\uAC11,\uBC15\uC778\uC219"
+      characters:
+      - name: Huwa
+        face: 0
+  - sheetName: "\uBC15\uC120\uAC11"
+    sheetID: 760843800
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2F9\uC2E0\uB3C4 \uC5B8\uC81C\uB098 \uB098\uB77D\uC744 \uAC04\uB2E4.
+        \uC624\uB298\uC758 \uAC8C\uC2A4\uD2B8,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+      - name: A
+        face: 0
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{1} \uD559\uC0DD, {0}\uB2D8 \uBAA8\uC168\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uAD6C\uACBD\uAFBC"
+      scriptText: "\uC640\uC544!"
+      cameraPos: 05000000
+      waitSeconds: 1.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: A
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uC640\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC790 \uADF8\uB7EC\uBA74, {0}\uB2D8\uC5D0 \uB300\uD574 \uC798
+        \uBAA8\uB974\uC2DC\uB294 \uBD84\uB4E4\uC744 \uC704\uD574\uC11C"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC804\uC9C0\uC804\uB2A5\uD55C \uCC57GPT\uB97C \uD1B5\uD574\uC11C
+        \uC5B4\uB5A4\uBD84\uC774\uC2E0\uC9C0 \uD55C\uBC88 \uC54C\uC544\uBCF4\uB3C4\uB85D
+        \uD558\uACA0\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 1
+      functionClassName: Gpt
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 01000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294), \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50
+        \uC124\uB9BD\uBD80\uD130 \uC788\uB358 {1}\uC785\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "{0}\uC740(\uB294) \uCC9C\uC7AC\uC801\uC778 \uC804\uB7B5\uACFC
+        \uAC15\uB825\uD55C \uBB34\uB825\uC744 \uBC14\uD0D5\uC73C\uB85C"
+      cameraPos: 03000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50\uC758
+        \uBA85\uC131\uC744 \uC704\uD574"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "500\uAC1C\uAC00 \uB118\uB294 \uD559\uAD50\uB97C \uC81C\uD328\uD558\uBA70,
+        \uD559\uAD50\uB97C \uD64D\uBCF4\uD558\uC600\uC2B5\uB2C8\uB2E4."
+      cameraPos: 01000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Alice
+        face: 1
+    - nameText: "\uCC57GPT"
+      scriptText: "\uB610\uD55C, {0}\uC740(\uB294) \uD504\uB85C\uC81D\uD2B8\uB97C
+        \uC77C\uBD80\uB85C \uB9DD\uAC00\uD2B8\uB9AC\uAE38 \uC88B\uC544\uD558\uB294"
+      cameraPos: 03000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uCC57GPT"
+      scriptText: "\uC5C4\uC758 \uAE30\uC9C8\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8."
+      cameraPos: 02000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uD504\uB85C\uC81D\uD2B8 \uB9DD\uAC00\uD2B8\uB9AC\uB294\uAC78
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB098\uB77D\uD034\uC988\uC1FC, \uC2DC\uC791\uD569\uB2C8\uB2E4."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: Title
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+      - name: Alice
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC774\uB807\uAC8C, \uAC8C\uC784\uC7BC\uB3C4 \uC5F4\uC5B4\uC8FC\uC2DC\uACE0
+        \uD559\uAD50\uD55C\uD14C \uACE0\uB9C8\uC6CC\uD558\uACE0 \uC788\uB294\uB370,"
+      cameraPos: 01000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+    - nameText: "\uD6C4\uC640"
+      scriptText: "{0}\uB2D8\uB3C4 \uC11C\uC6B8 \uB514\uC9C0\uD14D \uACE0\uB4F1\uD559\uAD50,
+        \uC88B\uC544\uD558\uC2ED\uB2C8\uAE4C?"
+      cameraPos: 02000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 3
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC88B\uC2B5\uB2C8\uB2E4. \uADF8\uB7EC\uBA74,"
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uBB38\uC81C, \uB098\uAC11\uB2C8\uB2E4."
+      cameraPos: 0200000003000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2E4\uC74C \uC911, \uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uB41C
+        \uC0AC\uB78C\uC774 \uC544\uB2CC \uC0AC\uB78C\uC744 \uACE8\uB77C\uC8FC\uC138\uC694!"
+      cameraPos: 020000000400000004000000
+      waitSeconds: 0
+      functionClassName: TextQuiz
+      functionParameter: "\uC6B0\uB9AC \uD559\uAD50\uC640 \uAD00\uB828\uC774 \uC5C6\uB294
+        \uC0AC\uB78C\uC744 \uACE0\uB974\uC2DC\uC624\\\uC2EC\uC7AC\uD6C8,\uAE40\uC7AC\uC11D,\uACFD\uC77C\uCC9C,\uBC15\uC120\uAC11,\uBC15\uC778\uC219"
+      characters:
+      - name: Huwa
+        face: 0
+  - sheetName: "\uD604\uC601\uC12D"
+    sheetID: 601953272
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uC815\uB2F5\uC785\uB2C8\uB2E4."
+      cameraPos: 04000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 0
+      - name: Alice
+        face: 0
+    - nameText: "\uC568\uB9AC\uC2A4"
+      scriptText: "\uC774\uC885\uC554\uC528\uB294, \uC77C\uC81C \uAC10\uC815\uAE30
+        \uB54C, \uB300\uAD6C\uC740\uD589 \uCD9C\uB0A9\uACC4 \uC8FC\uC784."
+      cameraPos: 06000000
+      waitSeconds: 0
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uC568\uB9AC\uC2A4"
+      scriptText: "\uC758\uC5F4\uB2E8 \uBD80\uB2E8\uC7A5\uC744 \uC5ED\uC784\uD558\uC2E0 
+        \uB3C5\uB9BD\uC6B4\uB3D9\uAC00\uC2ED\uB2C8\uB2E4."
+      cameraPos: 06000000
+      waitSeconds: 0.5
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 02000000
+      waitSeconds: 2
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: 
+      scriptText: 
+      cameraPos: 01000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: '{0}'
+      scriptText: 
+      cameraPos: 03000000
+      waitSeconds: 1
+      functionClassName: 
+      functionParameter: 
+      characters: []
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB124, \uBB50. \uCD95\uD558\uB4DC\uB9AC\uACE0\uC694."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: Dialog
+      functionParameter: "Quiz 2\uBC88\uC9F8"
+      characters: []
+  - sheetName: "Quiz 2\uBC88\uC9F8"
+    sheetID: 1461744739
+    dialogs:
+    - nameText: "\uD6C4\uC640"
+      scriptText: "\uB2E4\uC74C \uBB38\uC81C, \uB098\uAC00\uACA0\uC2B5\uB2C8\uB2E4."
+      cameraPos: 02000000
+      waitSeconds: 0
+      functionClassName: DisableTV
+      functionParameter: 
+      characters:
+      - name: Huwa
+        face: 1
 --- !u!4 &1970901094
 Transform:
   m_ObjectHideFlags: 0
@@ -7888,7 +8985,7 @@ RectTransform:
   m_Children:
   - {fileID: 516626880}
   m_Father: {fileID: 1465590265}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8127,14 +9224,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147200894}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &315097568916356182
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4087993750060951881}
-  m_Mesh: {fileID: 6896713513802838454, guid: 910c6d5eb9b71d8489381c84d762bb07, type: 3}
 --- !u!33 &486683223742806100
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8186,48 +9275,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &2574797675803822236
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4087993750060951881}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e5bc72172f073b448aa15230a428e47c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &3562013352137586673
 Transform:
   m_ObjectHideFlags: 0
@@ -8245,39 +9292,6 @@ Transform:
   m_Father: {fileID: 2010431093}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!4 &3742676027874620403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4087993750060951881}
-  m_LocalRotation: {x: -0.42261827, y: -0, z: 0.9063079, w: 0}
-  m_LocalPosition: {x: -0.773, y: 0.22, z: 3.329}
-  m_LocalScale: {x: 20, y: 20, z: 20}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8622193675353698256}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -50, z: 180}
---- !u!1 &4087993750060951881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3742676027874620403}
-  - component: {fileID: 315097568916356182}
-  - component: {fileID: 2574797675803822236}
-  m_Layer: 0
-  m_Name: ganpan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &4189756032855813451
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,8 +9444,8 @@ Transform:
   m_LocalScale: {x: 1.5, y: 2, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1397622400}
   - {fileID: 88648113}
-  - {fileID: 3742676027874620403}
   - {fileID: 410450016}
   m_Father: {fileID: 2010431093}
   m_RootOrder: 6

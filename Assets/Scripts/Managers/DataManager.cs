@@ -11,7 +11,29 @@ public class DataManager : Singleton<DataManager>
     private const string RANGE = "A2:K";
     private const long DEFAULT_SHEET_ID = 853365801L;
 
-    public string playerName = "서경훈";
+    public string PlayerName
+    {
+        get
+        {
+            return playerName;
+        }
+        set
+        {
+            playerName = value;
+            if (jobDict.ContainsKey(playerName))
+                jobName = jobDict[playerName];
+            else
+                jobName = "서울 디지텍고 학생";
+        }
+    }
+    private string playerName = "서경훈";
+
+    private string jobName = "서울 디지텍고 학생";
+    private Dictionary<string, string> jobDict = new Dictionary<string, string>()
+    {
+        {"채주영","게임잼 멘토" },
+
+    };
     
     [SerializeField] private List<Dialogs> dialogList = new();
     private Dictionary<string, Dialogs> dialogDict = new();
@@ -39,6 +61,11 @@ public class DataManager : Singleton<DataManager>
         LoadData();
     }
 
+    public string GetFormat(string text)
+    {
+        return string.Format(text.Replace("\\n", "\n"), PlayerName, jobName);
+    }
+
     public Dialogs GetDialogs(string dialogName)
     {
         return dialogDict[dialogName];
@@ -51,6 +78,8 @@ public class DataManager : Singleton<DataManager>
 
     private IEnumerator LoadDataCoroutine()
     {
+        Debug.Log("Loading...");
+
         var defaultWww = UnityWebRequest.Get($"{ADDRESS}/export?format=tsv&range={RANGE}&gid={DEFAULT_SHEET_ID}");
         yield return defaultWww.SendWebRequest();
 
@@ -122,6 +151,8 @@ public class DataManager : Singleton<DataManager>
                     });
                 }
             }
+
+            Debug.Log("Finished");
         }
     }
 }

@@ -15,8 +15,6 @@ namespace UI
         [SerializeField] private UITextQuizButton originOptionButton;
         private List<UITextQuizButton> optionButtons = new();
         [SerializeField] private RectTransform optionParent;
-
-        [SerializeField] private TextMeshProUGUI specialText;
         private int selectIndex = -1;
 
         public override void Active()
@@ -58,7 +56,6 @@ namespace UI
         {
             selectIndex = -1;
             quizBase.gameObject.SetActive(true);
-            specialText.gameObject.SetActive(false);
 
             UIManager.Instance.Get(nameof(UIDialog)).DeActive();
 
@@ -88,19 +85,31 @@ namespace UI
 
             CameraManager.Instance.ChangeDisplay(CameraType.Default);
 
-            specialText.gameObject.SetActive(true);
-            specialText.text = $"{DataManager.Instance.playerName}의 선택 <#000000>{selectIndex + 1}번 {quizSelects[selectIndex]}";
+            var uiSpecialText = UIManager.Instance.Get(nameof(UISpecialText));
+            uiSpecialText.Active();
+            yield return uiSpecialText.Wait($"{DataManager.Instance.PlayerName}의 선택 <#000000>{selectIndex + 1}번 {quizSelects[selectIndex]}");
 
-            specialText.color = specialText.color.GetChangeAlpha(0);
-            yield return specialText.DOFade(1, 1.5f).WaitForCompletion();
-
-            yield return new WaitForSeconds(2);
-
-            yield return specialText.DOFade(0, 1.5f).WaitForCompletion();
             yield return new WaitForSeconds(0.5f);
 
             var uiDialog = UIManager.Instance.Get(nameof(UIDialog)) as UIDialog;
             uiDialog.Active();
+            uiDialog.SetDialog(new Dialog()
+            {
+                nameText = "후와",
+                scriptText = $"{DataManager.Instance.PlayerName}님께서 말씀해주신, {selectIndex + 1}번. {quizSelects[selectIndex]}",
+                waitSeconds = 1f,
+                cameraPos = new List<CameraType>() { CameraType.MC },
+                characters = new List<Dialog.Character>() { 
+                    new Dialog.Character() { 
+                        name = "Huwa", 
+                        face = Dialog.Character.FaceType.Surprise
+                    },
+                    new Dialog.Character() {
+                        name = "Alice",
+                        face = Dialog.Character.FaceType.Surprise
+                    }
+                }
+            });
             foreach (var dialog in DataManager.Instance.GetDialogs(quizSelects[selectIndex]).dialogs)
             {
                 uiDialog.SetDialog(dialog);

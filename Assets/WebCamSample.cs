@@ -14,6 +14,6 @@ public class WebCamSample : MonoBehaviour
         GetComponent<MeshRenderer>().material.mainTexture = camTexture;
 
         var scale = transform.localScale;
-        transform.localScale = new Vector3(scale.x, scale.y * camTexture.texelSize.y / camTexture.texelSize.x, scale.z);
+        transform.localScale = new Vector3(scale.x * camTexture.texelSize.y / camTexture.texelSize.x, scale.y, scale.z);
     }
 }

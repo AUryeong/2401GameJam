@@ -34,7 +34,7 @@ public class OutGameManager : MonoBehaviour
     private void SelectName()
     {
         SoundManager.Instance.PlaySound("Button");
-        DataManager.Instance.playerName = nameInput.text;
+        DataManager.Instance.PlayerName = nameInput.text;
         StartCoroutine(SelectNameCoroutine());
     }
 
